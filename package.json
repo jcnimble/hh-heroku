@@ -1,0 +1,29 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Matches Friends based on questionnaire answers",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcnimble/friend-finder.git"
+  },
+  "keywords": [
+    "friend",
+    "finder"
+  ],
+  "author": "jen ginelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcnimble/friend-finder/issues"
+  },
+  "homepage": "https://github.com/jcnimble/friend-finder#readme"
+}
