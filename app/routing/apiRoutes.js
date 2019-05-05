@@ -31,8 +31,9 @@ module.exports = function(app) {
     // It will do this by sending out the value "true" have a table
     // req.body is available since we're using the body parsing middleware
     var newFriend=req.body;
-    console.log(newFriend);
+    console.log("This is from the API Post:"+ newFriend);
     res.json(newFriend);
+    friendData.push(newFriend);
   });
 };
 

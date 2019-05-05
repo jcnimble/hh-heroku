@@ -3,7 +3,11 @@
 // Series of npm packages that we will use to give our server useful functionality
 // ==============================================================================
 
-var express = require("express");
+var express = require('express');
+//Sunday add
+var bodyParser = require('body-parser');
+var path = require ('path');
+
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
@@ -15,6 +19,12 @@ var app = express();
 
 // Sets an initial port. We"ll use this later in our listener
 var PORT = process.env.PORT || 8080;
+
+//for bodyParser_sunday add
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
+app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }))
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));

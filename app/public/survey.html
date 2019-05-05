@@ -185,10 +185,23 @@
                 var newFriend = {
                     friendName: $("#name").val().trim(),
                     friendImage: $("#photo").val().trim(),
+                    score: [
+                        $("#q1").val().trim(),
+                        $("#q2").val().trim(),
+                        $("#q3").val().trim(),
+                        $("#q4").val().trim(),
+                        $("#q5").val().trim(),
+                        $("#q6").val().trim(),
+                        $("#q7").val().trim(),
+                        $("#q8").val().trim(),
+                        $("#q9").val().trim(),
+                        $("#q10").val().trim(),
+                    ]
                 };
 
 
                 console.log(newFriend);
+                console.log(newFriend.score);
 
                 // This line is the magic. It"s very similar to the standard ajax function we used.
                 // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
