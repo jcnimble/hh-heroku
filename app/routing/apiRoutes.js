@@ -67,7 +67,7 @@ module.exports = function (app) {
 
       if (totalDifference <= bestMatch.friendDifference) {
         bestMatch.name = friendData[i].friendName;
-        bestMatch.image = friendData[i].friendImage;
+        bestMatch.image = friendData[i].friendImageir ;
         bestMatch.friendDifference = totalDifference;
       }
       console.log(totalDifference = "Total Difference");

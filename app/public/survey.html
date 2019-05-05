@@ -161,6 +161,25 @@
                 <button id="submit" type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-check-circle"
                         aria-hidden="true"></i> Submit</button>
             </div>
+
+            <div id="resultsModal" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Your Friend</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h2 id="matchName"></h2>
+                      <img id="matchImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/330px-SNice.svg.png" alt="friend-pic" class="img-thumbnail">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
         </div>
 
         <hr>
@@ -199,31 +218,14 @@
                     ]
                 };
 
+                var currentURL = window.location.origin;
 
-                console.log(newFriend);
-                console.log(newFriend.score);
-
-                // This line is the magic. It"s very similar to the standard ajax function we used.
-                // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-                // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-                // depending on if a tables is available or not.
-
-                // $.post("/api/friends", newFriend,
-                //     function (data) {
-
-                //         // Clear the form when submitting
-                //         $("#reserve-name").val("");
-                //         $("#reserve-phone").val("");
-
-                //     });
-
-                $.post("/api/friends", newFriend)
-                    .then(function (data) {
-                        console.log("add.html", data);
-                        alert("Adding friend...");
-                        $("#reserve-name").val("");
-                        $("#reserve-phone").val("");
-                    });
+                $.post(currentURL + "/api/friends", newFriend, function (data) {
+                    console.log(data)
+                    $("#matchName").text (data.name);
+                    $("#matchImg").attr("src", data.image);
+                    $('#resultsModal').modal('toggle')
+                });
 
             });
 
