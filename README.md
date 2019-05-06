@@ -32,6 +32,7 @@ This app requires the express and body-parser npm packages :
 
    * Hot Restaurant Tutorial [Watch the Video!] (https://www.youtube.com/watch?v=G7RvQMW2DOg&feature=youtu.be&list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr)
    * Star Wars Tutorial [Watch the Video!](https://www.youtube.com/watch?v=ygk-kNstqK0&list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr&index=1)
+   * Star Wars Tutorial [Watch the Video!](https://www.youtube.com/watch?v=ygk-kNstqK0&list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr&index=1)
    * Friend Finder Tutorial [Watch the Video!](https://www.youtube.com/watch?v=kWu9stxD6m0)
    * Bryan esteemed Professor
    * Buzz and Aaron dedicated TAs
