@@ -1,10 +1,20 @@
 # friend-finder
 
-In this activity, you'll build a compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
-
-You will use Express to handle routing. Make sure you deploy your app to Heroku so other users can fill it out.
+This "Friend Finder" application is a full-stack site which takes in results from users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
 
 ## Getting Started
+
+This app requires the express and body-parser npm packages :
+
+   * [express](https://www.npmjs.com/package/express)
+
+   * [body-parser](https://www.npmjs.com/package/body-parser)
+
+
+### Deployment
+* Clone repo
+* Run npm install
+* At command prompt run 'node bamazonCustomer.js' and 'node bamazonManager.js' further instructions below
 
 
 
