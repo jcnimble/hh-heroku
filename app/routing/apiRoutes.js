@@ -41,6 +41,8 @@ module.exports = function (app) {
       return parseInt(item, 10);
     });
 
+    console.log(b);
+
     newFriend = {
       name: newFriendName,
       photo: newFriend.friendImage,
@@ -48,6 +50,24 @@ module.exports = function (app) {
     };
     console.log("1) Name" + newFriendName);
     console.log("2) User score" + newFriendScore);
+
+    // for (var i = 0; i < friendData.length; i++) {
+    //   console.log(friendData[i].friendName);
+    //   var friendScore = friendData[i].score;
+    //   console.log(friendScore);
+    //   console.log(friendData[i].friendName + ":" + friendScore);
+    //   console.log('3) friend = ' + JSON.stringify(friendData[i].score));
+    //   var diff = 0;
+    //   for (var j = 0; j < newFriendScore.length; j++)
+    //     console.log("New Friend: " + newFriendScore[j]);
+    //   console.log("Current Friend: " + friendScore[j]);
+    //   console.log("Friends: " + friendData[i].score[j])
+    //   console.log('4)diff = ' + diff);
+    //   if (diff < totalDifference) {
+    //     console.log('5)Closest match found =' + diff);
+    //     console.log('6)Friend name = ' + friendData[i].name)
+    //   }
+    // }
 
     var sum = b.reduce((a, b) => a + b, 0);
     console.log("3) Some of users score" + sum);
@@ -67,11 +87,14 @@ module.exports = function (app) {
 
       if (totalDifference <= bestMatch.friendDifference) {
         bestMatch.name = friendData[i].friendName;
-        bestMatch.image = friendData[i].friendImageir ;
+        bestMatch.image = friendData[i].friendImage;
         bestMatch.friendDifference = totalDifference;
       }
       console.log(totalDifference = "Total Difference");
     }
+    console.log(bestMatch);
+    console.log(bestMatch.name)
+    console.log(bestMatch.image)
     console.log(bestMatch);
     friendData.push(newFriend);
     console.log("8) New User Added");
