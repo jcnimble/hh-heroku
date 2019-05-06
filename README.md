@@ -2,6 +2,8 @@
 
 This "Friend Finder" application is a full-stack site which takes in results from users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
 
+To see the app in action, [Friend Finder](https://dashboard.heroku.com/apps/young-wave-20877)
+
 ## Getting Started
 
 This app requires the express and body-parser npm packages :
