@@ -14,8 +14,9 @@ This app requires the express and body-parser npm packages :
 ### Deployment
 * Clone repo
 * Run npm install
-* At command prompt run 'node bamazonCustomer.js' and 'node bamazonManager.js' further instructions below
+* At command prompt run 'node server.js'
 
+## 
 
 
 ## Built With
@@ -29,7 +30,7 @@ This app requires the express and body-parser npm packages :
 
 ## Acknowledgments
 
-   * Hot Restaurant Tutorial [Watch the Video!
+   * Hot Restaurant Tutorial [Watch the Video!] (https://www.youtube.com/watch?v=G7RvQMW2DOg&feature=youtu.be&list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr)
    * Star Wars Tutorial [Watch the Video!](https://www.youtube.com/watch?v=ygk-kNstqK0&list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr&index=1)
    * Friend Finder Tutorial [Watch the Video!](https://www.youtube.com/watch?v=kWu9stxD6m0)
    * Bryan esteemed Professor
